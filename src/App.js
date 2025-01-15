@@ -1,12 +1,13 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
+import './styles.css';
 
 function App() {
-  const foto= <img src="/foto.jpeg"  className="fot" alt="foto"/>
+  
   return (
     <div style={{height:"100%",width:"100%",backgroundColor:"black",position:"fixed",overflowX: "hidden",overflowY:"auto"}}>
       <div className="div1">
-        {foto}
+        <img src={`${process.env.PUBLIC_URL}/imagenes/foto.jpeg`} className="fot" alt="foto"/>
         <h3 className="App-header">
           Programador Training 
         </h3>
@@ -24,7 +25,7 @@ function App() {
       </div>
       <div className="contProy">
         <a href="https://garophyton.github.io/proyecto1/#/Home" className="contimgP1">
-          <img src="/proyect1.jpeg" alt="proyecto1" className="imgProyect1"/>
+        <img src={`${process.env.PUBLIC_URL}/imagenes/proyect1.jpeg`} alt="proyecto1" className="imgProyect1"/>
         </a>
         <div className="cardV" role="img"></div>
         <div className="cardV" role="img"></div>
